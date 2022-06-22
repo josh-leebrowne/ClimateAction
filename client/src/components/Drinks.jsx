@@ -21,7 +21,7 @@ const Drinks = ({setDrinks, setIsLoading}) => {
         }
         }
         getData()
-    },[])
+    },[setDrinks, setIsLoading])
 
     async function apiRequest(url) {
         return new Promise( (resolve, reject) => {
